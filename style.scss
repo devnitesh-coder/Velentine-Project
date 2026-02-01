@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(247, 154, 185);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    height: 12rem;
+    width: 20rem;
+    padding: 5px 10px;
+    border: 5px solid rgba(26, 25, 25, 0);
+    box-shadow: 10px 0 60px rgb(255, 0, 144);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+
+    .heart {
+      h1 {
+        text-align: center;
+        font-style: italic;
+      }
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      h4 {
+        text-align: center;
+        text-wrap: nowrap;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .btns {
+        padding-inline: 70px;
+        button {
+          padding: 0.5rem 1.5rem;
+          border: 2px solid white;
+          border-radius: 10px;
+          color: wheat;
+        }
+
+        #yesBtn {
+          background-color: rgb(47, 224, 47);
+        }
+
+        #noBtn {
+          background-color: rgb(214, 76, 76);
+          position: relative;
+        }
+      }
+    }
+  }
+}
