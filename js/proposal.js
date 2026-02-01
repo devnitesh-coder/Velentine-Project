@@ -22,7 +22,7 @@ const copyStatus = document.getElementById("copyStatus");
 
 // Inject content
 nameHeading.innerText = `hey, ${name}`;
-msgText.innerText = message;
+msgText.innerText = `🌹🌹${message}🌹🌹`;
 
 // Show copy button ONLY for creator
 if (isCreator === "true") {

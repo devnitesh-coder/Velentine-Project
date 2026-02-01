@@ -78,8 +78,8 @@ body {
   align-items: center;
 }
 .container .card {
-  height: 12rem;
-  width: 20rem;
+  min-height: 12rem;
+  min-width: 20rem;
   padding: 5px 10px;
   border: 5px solid rgba(26, 25, 25, 0);
   box-shadow: 10px 0 60px rgb(255, 0, 144);
@@ -94,6 +94,7 @@ body {
 .container .card .heart h1 {
   text-align: center;
   font-style: italic;
+  text-wrap: wrap;
 }
 .container .card .message {
   display: flex;
@@ -108,6 +109,7 @@ body {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 10px;
+  text-wrap: wrap;
 }
 .container .card .message .btns {
   padding-inline: 70px;
@@ -127,7 +129,7 @@ body {
 }
 .container .copy-box {
   position: absolute;
-  bottom: 30%;
+  bottom: 22%;
 }
 .container .copy-box p {
   text-align: center;
