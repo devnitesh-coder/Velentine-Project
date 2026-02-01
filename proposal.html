@@ -15,25 +15,26 @@
 </head>
 
 <body>
-    <div class="generater-page">
-        <h1>Generate Your Proposal <br>
-            <span>💖</span>
-            With A lot of Love
-        </h1>
-        <form id="proposalForm" action="#">
-            <div class="sec1">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter His/Her Name" required>
+    <div class="container">
+        <div class="card">
+            <div class="heart">
+                <h1></h1>
             </div>
-            <div class="sec2">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter Your Message Here" required></textarea>
+            <div class="message">
+                <h4 id="msg"></h4>
+                <div class="btns">
+                    <button id="yesBtn">Yes</button>
+                    <button id="noBtn">No</button>
+                </div>
             </div>
-            <button type="submit">Generate Proposal</button>
-        </form>
+        </div>
+        <div class="copy-box">
+            <p id="copyStatus"></p>
+            <button id="copyLinkBtn" style="display:none;">Copy Proposal Link</button>
+        </div>
     </div>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/proposal.js"></script>
 </body>
 
 </html>
